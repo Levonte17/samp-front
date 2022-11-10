@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: black;
+  color: powderblue;
+  text-align: center;
+}
+////////// NAV//////////////////////////////////////
+.nav{
+  width: 100%;
+  margin: 0%;
+  display:flex;
+  justify-content: space-evenly;
+  background-color: black;
+  color: powderblue;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+}
+.nav a{
+  text-decoration: none;
+
+}
+.links{
+  font-size: x-large;
+  color: powderblue;
+
+}
+.brand{
+  font-size: 2rem;
+  margin-top: 0;  
+  text-decoration: none;
+  color: powderblue;
+
+}
+//////////// HEADER /////////////////////////////////////
+.header{
+  text-align: center;
+  padding-top: 1%;
+  background-image: url(../src/assets/Header-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  text-shadow: 5px 5px 5px black;
+
+}
+.header2{
+  padding: 5% 3%;
+
+}
+.header h1{
+  font-size: 4rem;
+  color: black;
+}
+.header a{
+  font-size: 2rem;
+  font-weight: bolder;
+  color: powderblue;
+  text-shadow: 5px 5px 5px black;
+  text-decoration: none;
+}
+.header p{
+  font-size: 3rem;
+  color: black;
+  text-shadow: 5px 5px 5px powderblue;
+}
+div-link{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button{
+  padding: 3% 7% 3%;
+  background-color: black;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+//////////// ABOUT ////////////////////////////////////// 
+
+.about{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.about1{
+  width: 100%;
+
+}
+.about2{
+  width: 45%;
+  padding-bottom: 3%;
+}
+.about3{
+  width: 45%;
+}
+.about4{
+  width: 100%;
+  padding-bottom: 3%;
+
+}
+.cont-about{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.about h1{
+  font-size: 4rem;
+  color: powderblue;
+  background-color: black;
+  text-align: center;
+  text-shadow: 5px 5px 5px powderblue;
+}
+.about h2{
+  font-size: 4rem;
+  color: black;
+  background-color: black;
+  text-align: center;
+  text-shadow: 5px 5px 5px powderblue;
+}
+.about p{
+  font-size: 2rem;
+  color: black;
+  background-color: powderblue;
+  text-align: center;
+  padding-bottom: 7%;
+
+}
+///////// CONTACT /////////////////////////////////
+
+.contact{
+  text-align: center;
+  margin-left: 1%;
+  width: 100%;
+  background-image: url(../src/assets/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.contact h1{
+  font-size: 4rem;
+  color: black;
+  text-shadow: 5px 5px 5px powderblue;
+  text-align: center;
+  padding: 5% 5%;
+
+}
+.contact1 {
+  width: 100%;
+}
+.contact2 img,
+.contact3 img {
+  width: 50%;
+  height: 100%;
+  border-radius: 25%;
+  padding-top: 5%;
+
+}
+.contact3,
+.contact2{
+  padding-bottom: 7%;
+}
+.contact-display{
+  display: flex;
+  width: 100%;
+}
+
+////////// WORKOUTS //////////////////////////////////////
+
+
+/////////// ATHLETES //////////////////////////////////////
+.athlete h1{
+  font-size: 4rem;
+}
+.athlete{
+  width: 100%;
+}
+.athlete-display{
+  width: 100%;
+  margin: 1%;
+display: flex;}
+.athlete2 img{
+  width: 50%;
+}
+.athlete2 img{
+  width: 50%;
+}
+.athlete3 img{
+  width: 50%;
+}
+.athlete4 img{
+  width: 50%;
+}
+.athlete5 img{
+  width: 50%;
+}
+.athlete6 img{
+  width: 50%;
+}
+.athlete7 img{
+  width: 50%;
+}
+.athlete8 img{
+  width: 50%;
+}
+
