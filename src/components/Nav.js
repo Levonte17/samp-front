@@ -22,7 +22,7 @@ function Nav(props) {
     </a>
     </div>
 </Link>
-<Link to='WorkoutsList' >
+<Link to='Schedule' >
         <div className='links'>
         <a>  
             SCHEDULE
@@ -38,7 +38,7 @@ function Nav(props) {
         </div>
     </Link>
 
-    <Link to='ReviewsPage'>
+    <Link to='ReviewPage'>
         <div className='links'>
         <a>  
             REVIEWS

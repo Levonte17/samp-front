@@ -1,35 +1,28 @@
-import{useState, useEffect} from 'react';
-import{Routes, Route} from 'react-router-dom';
 
+
+
+import { Routes, Route } from 'react-router-dom';
 import About from '../components/About';
+import Header from '../components/Header';
 import Athlete from '../components/Athlete';
-import Contact from './Contact';
-import Schedule from '../pages/Schedule';
+import Contact from '../components/Contact';
+import Workout from '../components/Workout';
 
 function Main(props) {
-    
-const API_URL = 'http://localhost:4000/api/workout details/';
-const getData = async () => {
-    try {
-        const response = await fetch(API_URL);
-        const data = await response.json();
-        Schedule(data);
-    } catch (error) {
-        
-    }
-}
-
-useEffect(() => {
-    getData();
-}, []);
-
 
     return(
 
 <main>
+    <Header />
     <Athlete />
     <About />
+    <Workout />
     <Contact />
+
+<Routes>
+    <Route
+          path='/' element={<Main/>}/>
+    </Routes>
 </main>
 
     )

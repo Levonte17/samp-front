@@ -1,4 +1,3 @@
-import a from '../assets/a.png';
 
 
 function About(props) {

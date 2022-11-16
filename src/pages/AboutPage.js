@@ -3,12 +3,11 @@
 function About(props) {
     
     return(
-        <div className="about">
-<div className="about1">
+        <div className="abt">
+<div className="about-comp">
+
 <h1> 
-    Owner: 
-    <br/>
-    Corey Sample 
+   S.A.M.P. FITNESS CEO
 </h1>
 
 <div className="cont-about">
