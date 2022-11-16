@@ -1,6 +1,3 @@
-
-
-
 import { Routes, Route } from 'react-router-dom';
 import About from '../components/About';
 import Header from '../components/Header';
@@ -20,9 +17,8 @@ function Main(props) {
     <Contact />
 
 <Routes>
-    <Route
-          path='/' element={<Main/>}/>
-    </Routes>
+    <Route path='/' element={<Main/>}/>
+</Routes>
 </main>
 
     )

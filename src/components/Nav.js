@@ -38,7 +38,7 @@ function Nav(props) {
         </div>
     </Link>
 
-    <Link to='ReviewPage'>
+    <Link to='Review'>
         <div className='links'>
         <a>  
             REVIEWS
