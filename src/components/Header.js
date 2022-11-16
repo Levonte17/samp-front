@@ -4,6 +4,7 @@ import{Link} from 'react-router-dom';
 function Header(props) {
     return(
         <div className='header'> 
+    <div className='header1'>
 <h1> 
         WELCOME TO S.A.M.P. FITNESS
         <br/>
@@ -11,47 +12,48 @@ function Header(props) {
             Your Dreams Wont Work Unless You Do
         </a>
 </h1>
-
-    <div className='header2'>
-<button>
-    <Link to='About'>
-        <div className='div-link'>
-        <a>
-            GET TO KNOW US
-        </a>
-        </div>
-    </Link>
-</button>
-            <br/>
-<button>
-    <Link to='Wdetail'>
-        <div className='div-link'> 
-        <a>
-            UPCOMING WORKOUTS
-        </a>
 </div>
+    
+<div className='header2'>
+<div className='div-link'>
+    <button>
+        <Link to='About'>
+
+    <a>
+        GET TO KNOW US
+    </a>
     </Link>
 </button>
-        <br/>
-<button>
-    <Link to='Contact'>
-        <div className='div-link'> 
+</div>
+
+
+<div className='div-link'> 
+    <button>
+        <Link to='Wdetail'>
+            <a>
+                UPCOMING WORKOUTS
+            </a>
+        </Link>
+    </button>
+</div>
+        
+
+<div className='last-link'> 
+    <button>
+        <Link to='Contact'>
             <a>
                 QUESTIONS FOR US
             </a>
-        </div>
-    </Link>
-</button>
-
-<button>
-    <Link to='Contact'>
-        <div className='div-link'> 
+        </Link>
+    </button>
+    <button>
+        <Link to='Contact'>
             <a>
                  FOLLOW US
             </a>
+        </Link>
+    </button>
         </div>
-    </Link>
-</button>
 
     </div>
 </div>

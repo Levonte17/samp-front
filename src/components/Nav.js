@@ -1,18 +1,36 @@
 import{Link} from 'react-router-dom';
+
+
+
 function Nav(props) {
 
-    return (
-        
+    return ( 
 <div className="nav">
 
-<Link to='Wdetail'>
+<Link to=''>
     <div className='brand'> 
         <a>
             S.A.M.P. FITNESS
         </a>
     </div>
 </Link>        
-    <Link to='About'>
+
+<Link to='ContactPage'>
+    <div className='links'>    
+    <a>  
+        CONTACT
+    </a>
+    </div>
+</Link>
+<Link to='WorkoutsList' >
+        <div className='links'>
+        <a>  
+            SCHEDULE
+        </a>
+        </div>
+    </Link>
+
+    <Link to='AboutPage'>
         <div className='links'>
         <a>
             ABOUT
@@ -20,38 +38,15 @@ function Nav(props) {
         </div>
     </Link>
 
-<Link to='Wdetails' >
+    <Link to='ReviewsPage'>
         <div className='links'>
         <a>  
-            WORKOUT DETAILS
-        </a>
-        </div>
-    </Link>
-
-    <Link to='Athelete'>
-        <div className='links'>
-        <a>  
-                OUR ATHLETES
+            REVIEWS
         </a>        
         </div>
     </Link>
-
-    <Link to='Workout'>
-        <div className='links'>
-        <a>  
-            WORKOUTS
-        </a>
-        </div>
-    </Link>
-
-    <Link to='Contact Us'>
-        <div className='links'>    
-        <a>  
-            CONTACT US
-        </a>
-        </div>
-    </Link>
 </div>
+
     );
 }
 
