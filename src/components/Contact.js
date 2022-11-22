@@ -15,12 +15,15 @@ function Contact(props) {
 
     <div className="contact-display">
     <div className="contact2">
-                <img src={phone} />
+    <a href='tel:+12678729508'>
+                <img src={phone} alt='' className='img'/>
+    </a>
     </div>
 
     <div className="contact3">
-                <img src={email} />
-
+    <a href='mailto: csamp9@gmail.com'>
+                <img src={email}  alt='' className='img'/>
+    </a>
     </div>
 </div>
 </div>

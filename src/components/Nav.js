@@ -5,45 +5,35 @@ import{Link} from 'react-router-dom';
 function Nav(props) {
 
     return ( 
-<div className="nav">
 
-<Link to=''>
-    <div className='brand'> 
-        <a>
-            S.A.M.P. FITNESS
-        </a>
-    </div>
-</Link>        
-
-<Link to='ContactPage'>
-    <div className='links'>    
-    <a>  
+<div className='nav'>
+<Link to='/Contact-us'>
+    <a className='sam'>  
         CONTACT
     </a>
-    </div>
 </Link>
-<Link to='Schedule' >
-        <div className='links'>
-        <a>  
+<Link to='/workout' >
+        <a className='sam'>  
             SCHEDULE
         </a>
-        </div>
     </Link>
 
-    <Link to='AboutPage'>
-        <div className='links'>
-        <a>
+<Link to='/'>
+    <a className='samp'>  
+        S.A.M.P. FITNESS
+    </a>
+</Link>
+
+    <Link to='/About-us'>
+    <a className='sam'>  
             ABOUT
         </a>    
-        </div>
     </Link>
-
-    <Link to='Review'>
-        <div className='links'>
-        <a>  
-            REVIEWS
-        </a>        
-        </div>
+    
+    <Link to='/content'>
+    <a className='sam'>  
+            CONTENT
+        </a>    
     </Link>
 </div>
 

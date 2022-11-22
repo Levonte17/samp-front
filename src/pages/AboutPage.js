@@ -1,18 +1,18 @@
 
 
-function About(props) {
+function AboutPage(props) {
     
     return(
-        <div className="abt">
-<div className="about-comp">
+        <div className="pbg">
+<div className="aboutpage">
 
 <h1> 
    S.A.M.P. FITNESS CEO
 </h1>
 
-<div className="cont-about">
+<div className="aboutpageee">
 
-            <div className="about2">
+            <div className="aboutp">
 <p>
 <h2>
     HIGH SCHOOL
@@ -25,7 +25,7 @@ function About(props) {
 </p>
             </div>
 
-            <div className="about3">
+            <div className="about3pp">
 <p>    
 <h2>
     COLLEGE
@@ -36,7 +36,7 @@ function About(props) {
 </p>
             </div>
             </div>
-            <div className="about4">
+            <div className="aboutppp">
 <p>
 <h2> 
     PRO LIFE  
@@ -54,4 +54,4 @@ function About(props) {
     )
 };
 
-export default About;
+export default AboutPage;

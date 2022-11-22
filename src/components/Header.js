@@ -16,20 +16,20 @@ function Header(props) {
     
 <div className='header2'>
 <div className='div-link'>
+        <Link to='/about-us'>
     <button>
-        <Link to='About'>
 
     <a>
         GET TO KNOW US
     </a>
-    </Link>
 </button>
+    </Link>
 </div>
 
 
 <div className='div-link'> 
     <button>
-        <Link to='Wdetail'>
+        <Link to='/workout'>
             <a>
                 UPCOMING WORKOUTS
             </a>
@@ -40,14 +40,14 @@ function Header(props) {
 
 <div className='last-link'> 
     <button>
-        <Link to='Contact'>
+        <Link to='/reviews'>
             <a>
-                QUESTIONS FOR US
+                VIEW CONTENT
             </a>
         </Link>
     </button>
     <button>
-        <Link to='Contact'>
+        <Link to='/contact-us'>
             <a>
                  FOLLOW US
             </a>

@@ -1,38 +1,56 @@
 body {
   margin: 0;
+  width: 100%;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: black;
   color: powderblue;
   text-align: center;
 }
 ////////// NAV//////////////////////////////////////
-.nav{
-  width: 100%;
-  margin: 1%;
-  display:flex;
-  justify-content: space-evenly;
-  background-color: black;
-  color: powderblue;
-  padding-top: 1%;
-  padding-bottom: 1%;
 
-}
-.nav a{
-  text-decoration: none;
 
-}
-.links{
+
+    .img:hover
+    {
+        background-color: powderblue;
+        padding: 5% 5% 5%;
+        border-radius: 25%;
+    }
+    .div-link
+    button:hover,
+    .last-link
+    button:hover
+    {
+        background-color: grey;
+        padding: 5% 5% 5%;
+    }
+    .samp:hover,
+    .sam:hover{
+        background-color: grey;
+        padding: 1px 1px 1px;
+    }
+    
+
+
+.links, a{
   font-size: x-large;
   color: powderblue;
+  text-decoration: none;
+  padding-left: 1%;
 
 }
-.brand{
+.samp{
+  font-size: xx-large;
+  text-shadow: 2px 2px 2px powderblue;
+}
+.nav{
+  text-align: center;
   font-size: 2rem;
   margin-top: 0;  
   text-decoration: none;
   color: powderblue;
-
 }
+
 //////////// HEADER /////////////////////////////////////
 .header{
   text-align: center;
@@ -105,7 +123,40 @@ button{
 font-size: 2rem;  
 }
 
+//////////// ABOUT PAGE ////////////////////////////////////// 
+.aboutpage 
+h1{
+  padding-top: 3%;
+  width: 100%;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 5px 5px 5px black;
 
+}
+.aboutpage h2{
+  padding-top: 1%;
+  color: white;
+  font-size: 4rem;
+  text-shadow: 5px 5px 5px black;
+}
+.aboutpage p{
+  padding-top: 2%;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 5px 5px 5px black;
+
+}
+.about-comp a{
+  padding-top: 2%;
+  color: black;
+font-size: 2rem;  
+}
+
+//////////////////// PBG //////////////////////////////////////////
+.pbg{
+  background-image: url(../src/assets/backgrounds.jpg);
+
+}
 
 
 
@@ -204,9 +255,34 @@ font-size: 2rem;
   width: 100%;
 }
 
+
+//////////CONTACTPAGE ///////////////////////////////////
+.contactUs{
+  font-size: 4rem;
+  color: black;
+  text-shadow: 5px 5px 5px black;
+
+}
+.contact-display{
+  padding-bottom: 15%;
+}
+//////////CONTACTPAGE ///////////////////////////////////
+.contactUs{
+  font-size: 4rem;
+  color: black;
+  text-shadow: 5px 5px 5px black;
+
+}
+.contact-display{
+  padding-bottom: 15%;
+}
+
 ////////// WORKOUTS //////////////////////////////////////
 
-
+///////////HOME////////////////////////////////////////////
+.home{
+  width: 100%;
+}
 /////////// ATHLETES //////////////////////////////////////
 .banner img{
   width: 100%;
