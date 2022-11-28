@@ -7,7 +7,7 @@ function Athlete(props) {
     return(
         <div className="athlete">
     <div className="banner">
-            <img src={banner} />
+            <img src={banner} alt='banner' />
         </div>
     </div>
 

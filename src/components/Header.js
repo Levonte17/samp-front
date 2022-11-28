@@ -8,9 +8,9 @@ function Header(props) {
 <h1> 
         WELCOME TO S.A.M.P. FITNESS
         <br/>
-        <a>
+        <p>
             Your Dreams Wont Work Unless You Do
-        </a>
+        </p>
 </h1>
 </div>
     
@@ -19,9 +19,9 @@ function Header(props) {
         <Link to='/about-us'>
     <button>
 
-    <a>
+    <p>
         GET TO KNOW US
-    </a>
+    </p>
 </button>
     </Link>
 </div>
@@ -30,9 +30,9 @@ function Header(props) {
 <div className='div-link'> 
     <button>
         <Link to='/workout'>
-            <a>
+            <p>
                 UPCOMING WORKOUTS
-            </a>
+            </p>
         </Link>
     </button>
 </div>
@@ -41,16 +41,16 @@ function Header(props) {
 <div className='last-link'> 
     <button>
         <Link to='/content'>
-            <a>
+            <p>
                 VIEW CONTENT
-            </a>
+            </p>
         </Link>
     </button>
     <button>
         <Link to='/contact-us'>
-            <a>
+            <p>
                  FOLLOW US
-            </a>
+            </p>
         </Link>
     </button>
         </div>

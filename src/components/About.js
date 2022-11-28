@@ -9,7 +9,7 @@ function About(props) {
 <h1> 
     ABOUT S.A.M.P. FITNESS
 </h1>
-<a>
+<p>
     Sampfitness represents speed, agility, mobility and power
 <br/>
     We specialize in enhancing athletes of ALL ages bigger,stronger and faster
@@ -20,7 +20,7 @@ function About(props) {
 
     All athletes recieve premier traning as we value all sports
 <br/><br/>
-</a>
+</p>
 
 
 </div>

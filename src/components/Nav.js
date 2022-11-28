@@ -8,32 +8,32 @@ function Nav(props) {
 
 <div className='nav'>
 <Link to='/Contact-us'>
-    <a className='sam'>  
+    <p className='sam'>  
         CONTACT
-    </a>
+    </p>
 </Link>
 <Link to='/workout' >
-        <a className='sam'>  
+        <p className='sam'>  
             SCHEDULE
-        </a>
+        </p>
     </Link>
 
 <Link to='/'>
-    <a className='samp'>  
+    <p className='samp'>  
         S.A.M.P. FITNESS
-    </a>
+    </p>
 </Link>
 
     <Link to='/About-us'>
-    <a className='sam'>  
+    <p className='sam'>  
             ABOUT
-        </a>    
+        </p>    
     </Link>
     
     <Link to='/content'>
-    <a className='sam'>  
+    <p className='sam'>  
             CONTENT
-        </a>    
+        </p>    
     </Link>
 </div>
 
