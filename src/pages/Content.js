@@ -3,14 +3,12 @@
 function Content(props) {
     
     return(
-        <div className="pbg">
-    <div className="banner">
+    <div className="content">
             
             <h1>
                 Workout Content
             </h1>
 
-        </div>
     </div>
 
     )

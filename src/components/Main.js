@@ -11,7 +11,7 @@ import ShowSchedule from '../pages/ShowSchedule';
 function Main(props) {
 
     const [workout, setWorkout] = useState(null);
-    const API_URL = 'http://localhost:4001/api/workout/';
+    const API_URL = 'http://localhost:4003/api/workout/';
 const getData = async () => {
     try {
         const response = await fetch(API_URL);
@@ -38,6 +38,39 @@ const createWorkout = async (event) => {
     }
 }
 
+const deleteWorkout = async (id) => {
+    try {
+        await fetch(API_URL + id, {
+            method: 'DELETE'
+        });
+        getData();
+    } catch (error) {
+        console.log(error);
+        // TODO: add some logic to alert the user,
+        // that something went wrong here
+    }
+}
+
+const updateWorkout = async (updatedWorkout, id) => {
+    try {
+        await fetch(API_URL + id, {
+            method: 'PUT',
+            headers: {
+                'Content-type': 'Application/json'
+            },
+            body: JSON.stringify(updatedWorkout)
+        });
+        
+        getData();
+
+    } catch (error) {
+        console.log(error)
+        // TODO: add additional logic to alert a user 
+        // in case something goes wrong
+    }
+}
+
+
 useEffect(() => {
     getData();
 }, []);
@@ -53,7 +86,11 @@ useEffect(() => {
     <Route path='/about-us' element={<AboutPage/>}/>
     <Route path='/workout' element={<Schedule 
         workout={workout} createWorkout={createWorkout} />}/>
-    <Route path='/workout/:id' element={<ShowSchedule/>}/>
+    <Route path='/workout/:id' element={<ShowSchedule 
+                            workout={workout}
+                            deleteWorkout={deleteWorkout}
+                            updateWorkout={updateWorkout} 
+                            />}/>
     <Route path='/content' element={<Content/>}/>
 </Routes>
 </main>

@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { Link } from 'react-router-dom';
 function Schedule(props) {
 
     const [ newForm, setNewForm ] = useState({
@@ -13,9 +14,11 @@ function Schedule(props) {
             <div className="event" key={event._id}>
 
                 <h1>
-                    
+                    <Link to={`/workout/${event._id}`} className="showlink">
                         {event.name}
+                        <br/>
                         {event.date}
+                    </Link>
                 </h1>
             </div>
         ));
@@ -44,10 +47,13 @@ const handleSubmit = (e) => {
     });
 };
 return(
+<div className='pbg'>
+    <div className='schedule'>
     <section>
         { props.workout ? loaded() : loading() }
         <form onSubmit={handleSubmit}>
             <label> Name:
+                <br/>
                 <input type="text" 
                 value={newForm.name}
                 onChange={handleChange}
@@ -55,7 +61,9 @@ return(
                 name="name" 
                 />
             </label>
+            <br/><br/>
             <label> Date:
+                <br/>
                 <input type="text" 
                 value={newForm.date}
                 onChange={handleChange}
@@ -63,7 +71,9 @@ return(
                 name="date" 
                 />
             </label>
+                <br/><br/>
             <label> Time:
+                <br/>
                 <input type="text" 
                 value={newForm.time}
                 onChange={handleChange}
@@ -71,7 +81,9 @@ return(
                 name="time" 
                 />
             </label>
+                <br/><br/>
             <label> Description:
+            <br/>
                 <input type="text" 
                 value={newForm.description}
                 onChange={handleChange}
@@ -79,10 +91,13 @@ return(
                 name="description" 
                 />
             </label>
-                <input type="submit" value="Submit" />
+                <br/><br/>
+                <input type="submit" value="Submit" className='submit' />
         </form>
     </section>
+    </div>
+</div>
 )
 
-}
+};
 export default Schedule;

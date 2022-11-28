@@ -40,7 +40,7 @@ function Header(props) {
 
 <div className='last-link'> 
     <button>
-        <Link to='/reviews'>
+        <Link to='/content'>
             <a>
                 VIEW CONTENT
             </a>
