@@ -9,6 +9,7 @@ function Schedule(props) {
         description: '',
     });
 
+
     const loaded = () => {
         return props.workout.map(event => (
             <div className="event" key={event._id}>
@@ -47,6 +48,7 @@ const handleSubmit = (e) => {
     });
 };
 return(
+    
 <div className='pbg'>
     <div className='schedule'>
     <section>
@@ -97,7 +99,6 @@ return(
     </section>
     </div>
 </div>
-)
-
+    );
 };
 export default Schedule;

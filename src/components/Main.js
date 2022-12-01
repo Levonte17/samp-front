@@ -1,11 +1,11 @@
 import{useState, useEffect} from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 
 import Home from '../pages/Home';
 import Content from '../pages/Content';
 import ContactPage from '../pages/ContactPage';
 import AboutPage from '../pages/AboutPage';
-import Schedule from '../pages/Schedule';
+import Schedule from '../pages/Schedule'; 
 import ShowSchedule from '../pages/ShowSchedule';
 
 function Main(props) {

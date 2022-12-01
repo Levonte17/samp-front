@@ -1,8 +1,9 @@
 import{Link} from 'react-router-dom';
+import { login, logout } from '../Firebase';
 
 
 
-function Nav(props) {
+function Nav({ user }) {
 
     return ( 
 
@@ -35,6 +36,25 @@ function Nav(props) {
             CONTENT
         </p>    
     </Link>
+    <br/>
+    <section>
+        { 
+            user ? 
+            <>
+            <div className='user'>
+            Welcome, {user.displayName}
+            </div>
+        <div onClick={logout}>
+            LOGOUT
+        </div>
+            </>
+        :
+        <div onClick={login}>
+            LOGIN
+        </div>
+
+        }
+    </section>
 </div>
 
     );
