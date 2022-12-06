@@ -1,0 +1,395 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: Cambria, Cochin,
+   Georgia, Times, 'Times New Roman', serif;
+  background-color: black;
+  color: powderblue;
+  text-align: center;
+}
+////////// NAV//////////////////////////////////////
+
+
+
+    .img:hover
+    {
+        background-color: powderblue;
+        padding: 5% 5% 5%;
+        border-radius: 25%;
+    }
+    .div-link
+    button:hover,
+    .last-link
+    button:hover
+    {
+        background-color: grey;
+        padding: 5% 5% 5%;
+    }
+    .samp:hover,
+    .sam:hover{
+        background-color: grey;
+        padding: 1px 1px 1px;
+    }
+    
+
+
+.links, p{
+  font-size: x-large;
+  color: powderblue;
+  text-decoration: none;
+  padding-left: 1%;
+
+}
+.samp{
+  font-size: xx-large;
+  text-shadow: 2px 2px 2px powderblue;
+}
+.nav, Link{
+  align-content: center;
+  font-size: x-large;
+  margin-top: 0;  
+  text-decoration: none;
+  color: powderblue;
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+.user{
+  padding-top: 15%;
+}
+
+//////////// HEADER /////////////////////////////////////
+.header{
+  text-align: center;
+  padding-top: 1%;
+  background-image: url(../src/assets/Header-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  text-shadow: 5px 5px 5px powderblue;
+
+}
+.header2{
+  padding: 5% 3%;
+
+}
+.header h1{
+  font-size: 4rem;
+  color: black;
+}
+.header p{
+  font-size: 2rem;
+  font-weight: bolder;
+  color: powderblue;
+  text-shadow: 1px 1px 1px powderblue;
+  text-decoration: none;
+}
+.header p{
+  font-size: 3rem;
+  color: black;
+  text-shadow: 5px 5px 5px powderblue;
+}
+div-link{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button{
+  padding: 3% 7% 3%;
+  background-color: black;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+//////////// ABOUT COMPONENT ////////////////////////////////////// 
+.abt{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-image: url(../src/assets/abt.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.about-comp h1{
+  padding-top: 2%;
+  color: black;
+  font-size: 4rem;
+  text-shadow: 5px 5px 5px darkgray;
+}
+.about-comp h2{
+  padding-top: 2%;
+  color: black;
+  font-size: 4rem;
+  text-shadow: 5px 5px 5px darkgray;
+}
+.footer img{
+  width: 20%;
+  height: 20%;
+  padding-top: 0;
+
+}
+@media (min-width: 820px){
+  .nav {
+    justify-content: flex-start;
+  }
+}
+.footer {
+ text-align: center;
+ font-size: 2rem;
+ padding-top: 25%;
+
+}
+.about-comp a{
+  padding-top: 2%;
+  color: black;
+font-size: 2rem;  
+}
+
+//////////// ABOUT PAGE ////////////////////////////////////// 
+.aboutpage 
+h1{
+  padding-top: 3%;
+  width: 100%;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+
+}
+.aboutpage h2{
+  padding-top: 1%;
+  color: white;
+  font-size: 4rem;
+  text-shadow: 5px 5px 5px black;
+}
+.aboutpage p{
+  padding-top: 2%;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 5px 5px 5px black;
+
+}
+.about-comp p{
+  padding-top: 2%;
+  color: black;
+font-size: 2rem;  
+}
+
+//////////////////// PBG //////////////////////////////////////////
+.pbg{
+  background-image: url(../src/assets/backgrounds.jpg);
+
+}
+
+//////////////////// CONTENT //////////////////////////////////////////
+.content{
+  background-image: url(../src/assets/content.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+//////////////////// SCHEDULE //////////////////////////////////////////
+.schedule{
+  font-size: 4rem;
+  text-shadow: 5px 5px 5px black;
+  color: black;
+  padding-bottom: 15%;
+}
+form{
+padding-top: 25%;
+color: white;
+
+text-shadow: 2px 2px 2px white;
+
+
+}
+.submit{
+  font-size: 3rem;
+  background-color: green;
+box-shadow: 15px 15px 15px black;
+
+}
+//////////////////// CONTENT //////////////////////////////////////////
+.content{
+  font-size: 4rem;
+  text-shadow: 5px 5px 5px powderblue;
+  color: powderblue;
+  padding-bottom: 70%;
+  
+}
+
+
+
+
+
+//////////// ABOUT PAGE ////////////////////////////////////// 
+
+.about{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.about1{
+  width: 100%;
+  
+}
+.about2{
+  width: 45%;
+  padding-bottom: 3%;
+}
+.about3{
+  width: 45%;
+}
+.about4{
+  width: 100%;
+  padding-bottom: 3%;
+  
+}
+.cont-about{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.about h1{
+  font-size: 4rem;
+  color: powderblue;
+  background-color: black;
+  text-align: center;
+  text-shadow: 5px 5px 5px powderblue;
+}
+.about h2{
+  font-size: 4rem;
+  color: black;
+  background-color: black;
+  text-align: center;
+  text-shadow: 5px 5px 5px powderblue;
+}
+.about p{
+  font-size: 2rem;
+  color: black;
+  background-color: powderblue;
+  text-align: center;
+  padding-bottom: 7%;
+  
+}
+///////// CONTACT /////////////////////////////////
+
+.contact{
+  text-align: center;
+  margin-left: 1%;
+  width: 100%;
+  background-image: url(../src/assets/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.contact h1{
+  font-size: 4rem;
+  color: black;
+  text-shadow: 5px 5px 5px powderblue;
+  text-align: center;
+  padding: 5% 5%;
+  
+}
+.contact1 {
+  width: 100%;
+}
+.contact2 img,
+.contact3 img {
+  width: 50%;
+  height: 100%;
+  border-radius: 25%;
+  padding-top: 5%;
+
+}
+.contact3,
+.contact2{
+  padding-bottom: 7%;
+}
+.contact-display{
+  display: flex;
+  width: 100%;
+}
+
+
+//////////CONTACTPAGE ///////////////////////////////////
+.contactUs{
+  font-size: 4rem;
+  color: black;
+  text-shadow: 5px 5px 5px black;
+  
+}
+.contact-display{
+  padding-bottom: 15%;
+}
+//////////CONTACTPAGE ///////////////////////////////////
+.contactUs{
+  font-size: 4rem;
+  color: black;
+  text-shadow: 5px 5px 5px black;
+  
+}
+.contact-display{
+  padding-bottom: 15%;
+}
+
+////////// WORKOUTS //////////////////////////////////////
+
+///////////HOME////////////////////////////////////////////
+.home{
+  width: 100%;
+}
+/////////// ATHLETES //////////////////////////////////////
+.banner img{
+  width: 100%;
+}
+
+.athlete h1{
+  font-size: 4rem;
+}
+.athlete{
+  width: 100%;
+}
+.athlete-display{
+  width: 100%;
+  margin: 1%;
+  display: flex;}
+  .athlete2 img{
+    width: 50%;
+  }
+  .athlete2 img{
+    width: 50%;
+  }
+  .athlete3 img{
+    width: 50%;
+  }
+  .athlete4 img{
+    width: 50%;
+  }
+  .athlete5 img{
+    width: 50%;
+  }
+  .athlete6 img{
+    width: 50%;
+  }
+  .athlete7 img{
+    width: 50%;
+  }
+  .athlete8 img{
+    width: 50%;
+  }
+  .user{
+    color: powderblue;
+  }
+  
+  //////////////////// FOOTER //////////////////////////////////////////
+  .footer {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 25%;
+   
+   }
