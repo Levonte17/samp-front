@@ -1,22 +1,60 @@
+//////////////// VARIABLES ///////////////////////////
+$main-font: Arial, Helvetica, sans-serif;
+$main-font-size:2rem ;
+$main-color: rgb(131, 127, 127);
+$contrast-color: powderblue;
+
+// MIXIN PRESETS
+@mixin flex-container-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin white-text-black-bg {
+  color: $contrast-color;
+  background-color: $main-color;
+} 
+@mixin black-text-white-bg {
+  font-family: $main-font;
+  color: $main-color;
+  background-color: $contrast-color;  
+} 
+* {
+    margin: 0;
+  }
+  body{
+    box-sizing: border-box
+  }
+  ////////////////////// NAV /////////////////////////
+   .nav{
+    @include white-text-black-bg;
+    @include flex-container-centered;
+    a {
+      @include white-text-black-bg;
+      text-decoration: none;
+      font-family: $main-font;
+      div {
+        margin: 1rem;
+        font-size: large;
+      }
+    }
+   }
+
 body {
-  margin: 0;
-  width: 100%;
   font-family: Cambria, Cochin,
    Georgia, Times, 'Times New Roman', serif;
-  background-color: black;
+  background-color: black; 
   color: powderblue;
   text-align: center;
-}
+}  
 ////////// NAV//////////////////////////////////////
-
-
 
     .img:hover
     {
         background-color: powderblue;
         padding: 5% 5% 5%;
         border-radius: 25%;
-    }
+    }    
     .div-link
     button:hover,
     .last-link
@@ -24,26 +62,24 @@ body {
     {
         background-color: grey;
         padding: 5% 5% 5%;
-    }
+    }    
     .samp:hover,
     .sam:hover{
-        background-color: grey;
+        background-color: black;
         padding: 1px 1px 1px;
-    }
-    
-
-
-.links, p{
+    }    
+.links, p{  
   font-size: x-large;
   color: powderblue;
   text-decoration: none;
   padding-left: 1%;
 
-}
+}  
 .samp{
-  font-size: xx-large;
+  font-size: x-large;
   text-shadow: 2px 2px 2px powderblue;
-}
+}  
+/*
 .nav, Link{
   align-content: center;
   font-size: x-large;
@@ -53,10 +89,21 @@ body {
   display: flex;
   width: 95%;
   justify-content: space-between;
-}
+}  
+*/
+
+/////////// USER ///////////////////////////////////
+section{
+  padding: 1% 1% 1%;
+}  
 .user{
-  padding-top: 15%;
-}
+  font-size: x-large;
+}  
+.logs{
+  font-size: large;
+}  
+
+
 
 //////////// HEADER /////////////////////////////////////
 .header{

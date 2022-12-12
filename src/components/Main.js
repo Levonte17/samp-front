@@ -1,4 +1,4 @@
-import{useState, useEffect} from 'react';
+import{useState} from 'react';
 import { Routes, Route} from 'react-router-dom';
 
 import Home from '../pages/Home';
@@ -48,7 +48,7 @@ const deleteWorkout = async (id) => {
         getData();
     } catch (error) {
         console.log(error);
-        // TODO: add some logic to alert the user,
+        // TODO: add some logic to alert the ,
         // that something went wrong here
     }
 }
@@ -67,15 +67,10 @@ const updateWorkout = async (updatedWorkout, id) => {
 
     } catch (error) {
         console.log(error)
-        // TODO: add additional logic to alert a user 
+        // TODO: add additional logic to alert a  
         // in case something goes wrong
     }
 }
-
-
-useEffect(() => {
-    getData();
-}, []);
 
 
     return(
@@ -83,17 +78,34 @@ useEffect(() => {
 <main>
 
 <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/Contact-us' element={<ContactPage/>}/>
-    <Route path='/about-us' element={<AboutPage/>}/>
-    <Route path='/workout' element={<Schedule 
-        workout={workout} createWorkout={createWorkout} />}/>
-    <Route path='/workout/:id' element={<ShowSchedule 
-                            workout={workout}
-                            deleteWorkout={deleteWorkout}
-                            updateWorkout={updateWorkout} 
-                            />}/>
-    <Route path='/content' element={<Content/>}/>
+    <Route path='/' 
+        element={<Home
+    />}/>
+
+    <Route path='/Contact-us' 
+        element={<ContactPage
+    />}/>
+
+    <Route path='/about-us' 
+        element={<AboutPage
+    />}/>
+
+    <Route path='/workout' 
+        element={<Schedule 
+        workout={workout} 
+        createWorkout={createWorkout} 
+    />}/>
+
+    <Route path='/workout/:id' 
+        element={<ShowSchedule 
+        workout={workout}
+        deleteWorkout={deleteWorkout}
+        updateWorkout={updateWorkout} 
+    />}/>
+
+    <Route path='/content' 
+        element={<Content
+    />}/>
 </Routes>
 </main>
 

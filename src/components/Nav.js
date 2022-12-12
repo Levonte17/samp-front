@@ -1,7 +1,4 @@
 import{Link} from 'react-router-dom';
-import { login, logout } from '../Firebase';
-
-
 
 function Nav({ user }) {
 
@@ -9,54 +6,36 @@ function Nav({ user }) {
 
 <div className='nav'>
 <Link to='/'>
-    <p className='samp'>  
+    <div className='samp'>  
         S.A.M.P. FITNESS
-    </p>
+    </div>
 </Link>
 <br/>
 <Link to='/Contact-us'>
-    <p className='sam'>  
+    <div className='sam'>  
         CONTACT
-    </p>
+    </div>
 </Link>
 
 <Link to='/workout' >
-        <p className='sam'>  
+        <div className='sam'>  
             SCHEDULE
-        </p>
-    </Link>
+        </div>
+</Link>
 
 
     <Link to='/About-us'>
-    <p className='sam'>  
+    <div className='sam'>  
             ABOUT
-        </p>    
+        </div>    
     </Link>
     
     <Link to='/content'>
-    <p className='sam'>  
+    <div className='sam'>  
             CONTENT
-        </p>    
+        </div>    
     </Link>
     <br/>
-    <section>
-        { 
-            user ? 
-            <>
-            <div className='user'>
-            Welcome, {user.displayName}
-            </div>
-        <div onClick={logout}>
-            LOGOUT
-        </div>
-            </>
-        :
-        <div onClick={login}>
-            LOGIN
-        </div>
-
-        }
-    </section>
 </div>
 
     );
