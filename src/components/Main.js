@@ -1,4 +1,4 @@
-import{useState} from 'react';
+import{useState, useEffect} from 'react';
 import { Routes, Route} from 'react-router-dom';
 
 import Home from '../pages/Home';
@@ -48,7 +48,7 @@ const deleteWorkout = async (id) => {
         getData();
     } catch (error) {
         console.log(error);
-        // TODO: add some logic to alert the ,
+        // TODO: add some logic to alert the user,
         // that something went wrong here
     }
 }
@@ -67,11 +67,15 @@ const updateWorkout = async (updatedWorkout, id) => {
 
     } catch (error) {
         console.log(error)
-        // TODO: add additional logic to alert a  
+        // TODO: add additional logic to alert a user 
         // in case something goes wrong
     }
 }
 
+
+useEffect(() => {
+    getData();
+}, []);
 
     return(
 
