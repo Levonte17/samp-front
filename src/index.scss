@@ -79,7 +79,6 @@ body {
   font-size: x-large;
   text-shadow: 2px 2px 2px powderblue;
 }  
-/*
 .nav, Link{
   align-content: center;
   font-size: x-large;
@@ -90,7 +89,6 @@ body {
   width: 95%;
   justify-content: space-between;
 }  
-*/
 
 /////////// USER ///////////////////////////////////
 section{
@@ -105,6 +103,13 @@ section{
 
 
 
+//////////// PRIVATE /////////////////////////////////////
+button{
+  color: powderblue;
+}
+H3{
+  padding-bottom: 15%;
+}
 //////////// HEADER /////////////////////////////////////
 .header{
   text-align: center;
@@ -127,24 +132,18 @@ section{
 }
 .header p{
   font-size: 2rem;
-  font-weight: bolder;
-  color: powderblue;
-  text-shadow: 1px 1px 1px powderblue;
-  text-decoration: none;
-}
-.header p{
-  font-size: 3rem;
   color: black;
-  text-shadow: 5px 5px 5px powderblue;
+  text-shadow: 2px 2px 2px powderblue;
+  text-decoration: none;
 }
 div-link{
   width: 100%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 button{
-  padding: 3% 7% 3%;
+  padding: 2% 8% 2%;
   background-color: black;
   justify-content: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -258,6 +257,16 @@ text-shadow: 2px 2px 2px white;
 box-shadow: 15px 15px 15px black;
 
 }
+//////////////////// SHOW //////////////////////////////////////////
+.show{
+  h3{
+    color: powderblue;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+
+  }
+
+}
 //////////////////// CONTENT //////////////////////////////////////////
 .content{
   font-size: 4rem;
@@ -273,10 +282,14 @@ box-shadow: 15px 15px 15px black;
 
 //////////// ABOUT PAGE ////////////////////////////////////// 
 
-.about{
-  width: 100%;
+.aboutp,
+.about3pp,
+.aboutppp{
+  width: 75%;
   height: auto;
   display: flex;
+  padding-top: 3%;
+  padding-left: 10%;
 }
 .about1{
   width: 100%;
@@ -308,14 +321,14 @@ box-shadow: 15px 15px 15px black;
   text-shadow: 5px 5px 5px powderblue;
 }
 .about h2{
-  font-size: 4rem;
+font-size: x-large;  
   color: black;
   background-color: black;
   text-align: center;
   text-shadow: 5px 5px 5px powderblue;
 }
 .about p{
-  font-size: 2rem;
+font-size: x-large;  
   color: black;
   background-color: powderblue;
   text-align: center;

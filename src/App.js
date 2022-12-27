@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       
-      <Nav />
+      <Nav user={user}/>
       <User user={user} />
       <Main user={user} />
       <Footer />

@@ -1,6 +1,7 @@
 import{useState, useEffect} from 'react';
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
+import Login from '../pages/Login';
 import Home from '../pages/Home';
 import Content from '../pages/Content';
 import ContactPage from '../pages/ContactPage';
@@ -8,7 +9,16 @@ import AboutPage from '../pages/AboutPage';
 import Schedule from '../pages/Schedule'; 
 import ShowSchedule from '../pages/ShowSchedule';
 
-function Main(props) {
+function PrivatePage ({ children, user}) {
+    return user ? children
+    :
+    <h3>
+        Please Login To View The Schedule
+    </h3>
+    
+}
+
+function Main({user}) {
 
     const [workout, setWorkout] = useState(null);
     //const API_URL = 'http://localhost:4003/api/workout/';
@@ -86,6 +96,10 @@ useEffect(() => {
         element={<Home
     />}/>
 
+    <Route path='/login' 
+        element={<Login
+    />}/>
+
     <Route path='/Contact-us' 
         element={<ContactPage
     />}/>
@@ -95,10 +109,15 @@ useEffect(() => {
     />}/>
 
     <Route path='/workout' 
-        element={<Schedule 
+        element={
+        <PrivatePage user={user}>
+        <Schedule 
+        user={user}
         workout={workout} 
         createWorkout={createWorkout} 
-    />}/>
+        />
+        </PrivatePage>
+        }/>
 
     <Route path='/workout/:id' 
         element={<ShowSchedule 

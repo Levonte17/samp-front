@@ -47,7 +47,8 @@ function ShowSchedule({ workout, deleteWorkout, updateWorkout }) {
             };
 
         return (
-            <section>
+            <div className='pbg'>
+            <section className='show'>
 
                 <h1>
                     {event.name}
@@ -73,6 +74,7 @@ function ShowSchedule({ workout, deleteWorkout, updateWorkout }) {
                     Delete
                 </button>
             </section>
+            </div>
         )
     };
 
