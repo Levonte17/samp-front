@@ -25,6 +25,10 @@ $contrast-color: powderblue;
   body{
     box-sizing: border-box
   }
+  .abt, .about-comp p
+  {
+    color: black;
+  }
   ////////////////////// NAV /////////////////////////
    .nav{
     @include white-text-black-bg;
@@ -47,6 +51,46 @@ body {
   color: powderblue;
   text-align: center;
 }  
+///////// CONTACT /////////////////////////////////
+
+.contact{
+  text-align: center;
+  margin-left: 1%;
+  width: 100%;
+  background-image: url(../src/assets/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.contact h1{
+  font-size: 4rem;
+  color: black;
+  text-shadow: 5px 5px 5px powderblue;
+  text-align: center;
+  padding: 5% 5%;
+  
+}
+.contact1 {
+  width: 100%;
+}
+.contact2 img,
+.contact3 img {
+  width: 50%;
+  height: 100%;
+  border-radius: 25%;
+  padding-top: 5%;
+
+}
+.contact3,
+.contact2{
+  padding-bottom: 7%;
+}
+.contact-display{
+  display: flex;
+  width: 100%;
+}
+
 ////////// NAV//////////////////////////////////////
 
     .img:hover
@@ -174,13 +218,86 @@ button{
   width: 20%;
   height: 20%;
   padding-top: 0;
+  
+}
+//////////////////// PBG //////////////////////////////////////////
+.pbg{
+  background-image: url(../src/assets/backgrounds.jpg);
 
 }
-@media (min-width: 820px){
-  .nav {
-    justify-content: flex-start;
-  }
+
+//////////////////// CONTENT //////////////////////////////////////////
+.content{
+  background-image: url(../src/assets/content.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 4rem;
+  text-shadow: 5px 5px 5px powderblue;
+  color: powderblue;
+  padding-bottom: 70%;
+  
 }
+//////////// ABOUT PAGE ////////////////////////////////////// 
+.aboutpage 
+h1{
+  padding-top: 3%;
+  width: 100%;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 5px 5px 5px black;
+
+}
+.aboutpage h2{
+  padding-top: 1%;
+  color: white;
+  font-size: 4rem;
+  text-shadow: 5px 5px 5px black;
+}
+.aboutpage p{
+  padding-top: 2%;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 5px 5px 5px black;
+
+}
+.about-comp p{
+  padding-top: 2%;
+  color: black;
+  font-size: 2rem;  
+}
+//////////////////// SCHEDULE //////////////////////////////////////////
+.schedule{
+  font-size: 2rem;
+  text-shadow: 5px 5px 5px black;
+  color: black;
+  padding-bottom: 15%;
+}
+form{
+padding-top: 25%;
+color: white;
+
+text-shadow: 2px 2px 2px black;
+
+
+}
+.submit{
+  font-size: 2rem;
+  background-color: green;
+box-shadow: 15px 15px 15px black;
+
+}
+
+
+
+
+
+
+@media (max-width: 820px){
+  .nav {
+    justify-content: center;
+    display: block;
+  }
+
 .footer {
  text-align: center;
  font-size: 2rem;
@@ -287,7 +404,7 @@ box-shadow: 15px 15px 15px black;
 .aboutppp{
   width: 75%;
   height: auto;
-  display: flex;
+  display: block;
   padding-top: 3%;
   padding-left: 10%;
 }
@@ -308,7 +425,7 @@ box-shadow: 15px 15px 15px black;
   
 }
 .cont-about{
-  display: flex;
+  display: block;
   justify-content: center;
   justify-content: space-evenly;
 }
@@ -334,6 +451,12 @@ font-size: x-large;
   text-align: center;
   padding-bottom: 7%;
   
+}
+///////// CONTACT /////////////////////////////////
+.banner{
+  img{
+    width: 100%;
+  }
 }
 ///////// CONTACT /////////////////////////////////
 
@@ -371,7 +494,7 @@ font-size: x-large;
   padding-bottom: 7%;
 }
 .contact-display{
-  display: flex;
+  display: block;
   width: 100%;
 }
 
@@ -404,9 +527,6 @@ font-size: x-large;
   width: 100%;
 }
 /////////// ATHLETES //////////////////////////////////////
-.banner img{
-  width: 100%;
-}
 
 .athlete h1{
   font-size: 4rem;
@@ -417,7 +537,8 @@ font-size: x-large;
 .athlete-display{
   width: 100%;
   margin: 1%;
-  display: flex;}
+  display: block;
+}
   .athlete2 img{
     width: 50%;
   }
@@ -453,3 +574,4 @@ font-size: x-large;
     padding-top: 25%;
    
    }
+  }
