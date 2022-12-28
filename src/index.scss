@@ -350,7 +350,9 @@ font-size: 2rem;
   background-image: url(../src/assets/content.jpg);
   background-repeat: no-repeat;
   background-position: center;
-
+  h1{
+    font-size: 2rem;
+  }
 }
 
 //////////////////// SCHEDULE //////////////////////////////////////////
@@ -386,7 +388,7 @@ box-shadow: 15px 15px 15px black;
 }
 //////////////////// CONTENT //////////////////////////////////////////
 .content{
-  font-size: 4rem;
+  font-size: 2rem;
   text-shadow: 5px 5px 5px powderblue;
   color: powderblue;
   padding-bottom: 70%;
